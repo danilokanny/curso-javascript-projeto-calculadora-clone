@@ -48,7 +48,7 @@ initialize(){
         this.displayCalc = "Error";
     }
     getLastOperation(){
-        this._operation
+        this._operation[this._operation.length-1];
     }
 
     isOperator(value){
@@ -79,6 +79,7 @@ initialize(){
             //number
             let newValue = this.getLastOperation().toString() + value.toString(); 
             this._operation.push(newValue);
+            console.log('B',newValue);
         }
  //push acresenta no array, pop retira a ultima operação.
         console.log(this._operation);
