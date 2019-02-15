@@ -79,7 +79,7 @@ initialize(){
             //number
             let newValue = this.getLastOperation().toString() + value.toString(); 
             this._operation.push(newValue);
-            console.log('B',newValue);
+          
         }
  //push acresenta no array, pop retira a ultima operação.
         console.log(this._operation);
